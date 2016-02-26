@@ -16,10 +16,15 @@ extern const struct PTPopViewOptionKeys {
 
 @interface UIViewController (PopAnimation)
 
--(void)presentPopView:(UIView*)view
+- (void)presentPopViewController:(UIViewController *)vc
+                     withOptions:(NSDictionary *)options
+                      completion:(PTTransitionCompletionBlock)completion
+                     dimissBlock:(PTTransitionCompletionBlock)dismissBlock;
+- (void)presentPopView:(UIView*)view
           withOptions:(NSDictionary*)options
            completion:(PTTransitionCompletionBlock)completion;
 
 - (void)presentPopView:(UIView *)view withOptions:(NSDictionary *)options;
+- (void)presentPopViewController:(UIViewController *)vc withOptions:(NSDictionary *)options;
 
 @end

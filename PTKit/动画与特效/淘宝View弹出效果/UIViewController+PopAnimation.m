@@ -31,6 +31,24 @@ const struct PTPopViewOptionKeys PTPopViewOptionKeys = {
     return [self parentViewController].view;
 }
 
+- (void)presentPopViewController:(UIViewController *)vc withOptions:(NSDictionary *)options {
+    [self presentPopViewController:vc withOptions:options completion:nil dimissBlock:nil];
+}
+
+- (void)presentPopViewController:(UIViewController *)vc
+                     withOptions:(NSDictionary *)options
+                      completion:(PTTransitionCompletionBlock)completion
+                     dimissBlock:(PTTransitionCompletionBlock)dismissBlock {
+    UIViewController *targetVC = [self parentTargetViewController];
+    [targetVC addChildViewController:vc];
+    [self presentPopView:vc.view withOptions:options completion:^{
+        [vc didMoveToParentViewController:targetVC];
+        if (completion) {
+            completion();
+        }
+    }];
+}
+
 - (void)presentPopView:(UIView *)view withOptions:(NSDictionary *)options {
     [self presentPopView:view withOptions:options completion:nil];
 }
