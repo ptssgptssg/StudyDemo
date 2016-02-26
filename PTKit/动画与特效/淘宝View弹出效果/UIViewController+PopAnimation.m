@@ -129,7 +129,7 @@ const struct PTPopViewOptionKeys PTPopViewOptionKeys = {
     [self dismissPopViewWithCompletion:nil];
 }
 
-- (void)dismissPopViewWithCompletion:(void (^)(void))completion {
+- (void)dismissPopViewWithCompletion:(PTTransitionCompletionBlock)completion {
     UIView *target = [self parentTarget];
     UIView *modal = [target viewWithTag:PTPopViewTag];
     UIView *overlay = [target viewWithTag:PTPopViewOverlayTag];
