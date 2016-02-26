@@ -24,7 +24,9 @@ extern const struct PTPopViewOptionKeys {
           withOptions:(NSDictionary*)options
            completion:(PTTransitionCompletionBlock)completion;
 
-- (void)presentPopView:(UIView *)view withOptions:(NSDictionary *)options;
+- (void)presentPopViewController:(UIViewController *)vc;
 - (void)presentPopViewController:(UIViewController *)vc withOptions:(NSDictionary *)options;
+- (void)presentPopView:(UIView *)view;
+- (void)presentPopView:(UIView *)view withOptions:(NSDictionary *)options;
 
 @end
