@@ -28,7 +28,7 @@ const struct PTPopViewOptionKeys PTPopViewOptionKeys = {
 }
 
 - (UIView *)parentTarget {
-    return [self parentViewController].view;
+    return [self parentTargetViewController].view;
 }
 
 - (void)presentPopViewController:(UIViewController *)vc {

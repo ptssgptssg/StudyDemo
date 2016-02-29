@@ -13,6 +13,7 @@
 		F244B8641C7D8BFC00421236 /* AnimationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F244B8631C7D8BFC00421236 /* AnimationTableViewController.m */; };
 		F244B8681C7D8DD800421236 /* TaoBaoPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F244B8671C7D8DD800421236 /* TaoBaoPopViewController.m */; };
 		F244B86B1C7D8E9200421236 /* UIViewController+PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F244B86A1C7D8E9200421236 /* UIViewController+PopAnimation.m */; };
+		F2C8DEE01C843B3E0050CD8F /* NSTimer+PTTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C8DEDF1C843B3E0050CD8F /* NSTimer+PTTimer.m */; };
 		F2EC4AE51C7D826200FD4ACE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC4AE41C7D826200FD4ACE /* main.m */; };
 		F2EC4AE81C7D826200FD4ACE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC4AE71C7D826200FD4ACE /* AppDelegate.m */; };
 		F2EC4AEA1C7D826200FD4ACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2EC4AE91C7D826200FD4ACE /* Assets.xcassets */; };
@@ -52,6 +53,8 @@
 		F244B8691C7D8E9200421236 /* UIViewController+PopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PopAnimation.h"; sourceTree = "<group>"; };
 		F244B86A1C7D8E9200421236 /* UIViewController+PopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PopAnimation.m"; sourceTree = "<group>"; };
 		F28D3DE81C7FFFE900F4337F /* PTKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKit.h; sourceTree = "<group>"; };
+		F2C8DEDE1C843B3E0050CD8F /* NSTimer+PTTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+PTTimer.h"; sourceTree = "<group>"; };
+		F2C8DEDF1C843B3E0050CD8F /* NSTimer+PTTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+PTTimer.m"; sourceTree = "<group>"; };
 		F2EC4AE01C7D826200FD4ACE /* PTKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EC4AE41C7D826200FD4ACE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2EC4AE61C7D826200FD4ACE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -133,6 +136,15 @@
 			path = "淘宝View弹出效果";
 			sourceTree = "<group>";
 		};
+		F2C8DEDD1C8439C80050CD8F /* 工具类 */ = {
+			isa = PBXGroup;
+			children = (
+				F2C8DEDE1C843B3E0050CD8F /* NSTimer+PTTimer.h */,
+				F2C8DEDF1C843B3E0050CD8F /* NSTimer+PTTimer.m */,
+			);
+			path = "工具类";
+			sourceTree = "<group>";
+		};
 		F2EC4AD71C7D826200FD4ACE = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +170,7 @@
 		F2EC4AE21C7D826200FD4ACE /* PTKit */ = {
 			isa = PBXGroup;
 			children = (
+				F2C8DEDD1C8439C80050CD8F /* 工具类 */,
 				F244B85C1C7D859300421236 /* 动画与特效 */,
 				F2EC4AE61C7D826200FD4ACE /* AppDelegate.h */,
 				F2EC4AE71C7D826200FD4ACE /* AppDelegate.m */,
@@ -368,6 +381,7 @@
 				F244B85F1C7D85BC00421236 /* MainTableViewController.m in Sources */,
 				F244B8681C7D8DD800421236 /* TaoBaoPopViewController.m in Sources */,
 				F244B86B1C7D8E9200421236 /* UIViewController+PopAnimation.m in Sources */,
+				F2C8DEE01C843B3E0050CD8F /* NSTimer+PTTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
