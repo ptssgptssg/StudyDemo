@@ -13,6 +13,8 @@
 		F244B8641C7D8BFC00421236 /* AnimationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F244B8631C7D8BFC00421236 /* AnimationTableViewController.m */; };
 		F244B8681C7D8DD800421236 /* TaoBaoPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F244B8671C7D8DD800421236 /* TaoBaoPopViewController.m */; };
 		F244B86B1C7D8E9200421236 /* UIViewController+PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F244B86A1C7D8E9200421236 /* UIViewController+PopAnimation.m */; };
+		F27D5F331C85293C00CBE9FD /* WeiboPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27D5F321C85293C00CBE9FD /* WeiboPopViewController.m */; };
+		F27D5F361C8529F100CBE9FD /* PTWeiboMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F27D5F351C8529F100CBE9FD /* PTWeiboMenuView.m */; };
 		F2C8DEE01C843B3E0050CD8F /* NSTimer+PTTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C8DEDF1C843B3E0050CD8F /* NSTimer+PTTimer.m */; };
 		F2EC4AE51C7D826200FD4ACE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC4AE41C7D826200FD4ACE /* main.m */; };
 		F2EC4AE81C7D826200FD4ACE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC4AE71C7D826200FD4ACE /* AppDelegate.m */; };
@@ -52,6 +54,10 @@
 		F244B8671C7D8DD800421236 /* TaoBaoPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaoBaoPopViewController.m; sourceTree = "<group>"; };
 		F244B8691C7D8E9200421236 /* UIViewController+PopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PopAnimation.h"; sourceTree = "<group>"; };
 		F244B86A1C7D8E9200421236 /* UIViewController+PopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PopAnimation.m"; sourceTree = "<group>"; };
+		F27D5F311C85293C00CBE9FD /* WeiboPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboPopViewController.h; sourceTree = "<group>"; };
+		F27D5F321C85293C00CBE9FD /* WeiboPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboPopViewController.m; sourceTree = "<group>"; };
+		F27D5F341C8529F100CBE9FD /* PTWeiboMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWeiboMenuView.h; sourceTree = "<group>"; };
+		F27D5F351C8529F100CBE9FD /* PTWeiboMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTWeiboMenuView.m; sourceTree = "<group>"; };
 		F28D3DE81C7FFFE900F4337F /* PTKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKit.h; sourceTree = "<group>"; };
 		F2C8DEDE1C843B3E0050CD8F /* NSTimer+PTTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+PTTimer.h"; sourceTree = "<group>"; };
 		F2C8DEDF1C843B3E0050CD8F /* NSTimer+PTTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+PTTimer.m"; sourceTree = "<group>"; };
@@ -149,6 +155,10 @@
 		F2C8DEE11C8440260050CD8F /* 微博弹出动画效果 */ = {
 			isa = PBXGroup;
 			children = (
+				F27D5F311C85293C00CBE9FD /* WeiboPopViewController.h */,
+				F27D5F321C85293C00CBE9FD /* WeiboPopViewController.m */,
+				F27D5F341C8529F100CBE9FD /* PTWeiboMenuView.h */,
+				F27D5F351C8529F100CBE9FD /* PTWeiboMenuView.m */,
 			);
 			path = "微博弹出动画效果";
 			sourceTree = "<group>";
@@ -386,10 +396,12 @@
 				F244B8641C7D8BFC00421236 /* AnimationTableViewController.m in Sources */,
 				F2EC4AE81C7D826200FD4ACE /* AppDelegate.m in Sources */,
 				F2EC4AE51C7D826200FD4ACE /* main.m in Sources */,
+				F27D5F361C8529F100CBE9FD /* PTWeiboMenuView.m in Sources */,
 				F244B85F1C7D85BC00421236 /* MainTableViewController.m in Sources */,
 				F244B8681C7D8DD800421236 /* TaoBaoPopViewController.m in Sources */,
 				F244B86B1C7D8E9200421236 /* UIViewController+PopAnimation.m in Sources */,
 				F2C8DEE01C843B3E0050CD8F /* NSTimer+PTTimer.m in Sources */,
+				F27D5F331C85293C00CBE9FD /* WeiboPopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

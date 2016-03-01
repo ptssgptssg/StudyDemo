@@ -13,6 +13,7 @@
 
 //小分类
 #import "TaoBaoPopViewController.h"
+#import "WeiboPopViewController.h"
 
 //工具类
 #import "NSTimer+PTTimer.h"

@@ -24,7 +24,7 @@
     self.titles = [NSMutableArray array];
     self.classNames = [NSMutableArray array];
     [self addCell:@"淘宝View弹出效果" class:@"TaoBaoPopViewController"];
-
+    [self addCell:@"微博弹出动画效果" class:@"WeiboPopViewController"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
