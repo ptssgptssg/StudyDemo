@@ -118,6 +118,7 @@
 		F244B85C1C7D859300421236 /* 动画与特效 */ = {
 			isa = PBXGroup;
 			children = (
+				F2C8DEE11C8440260050CD8F /* 微博弹出动画效果 */,
 				F244B8651C7D8DA300421236 /* 淘宝View弹出效果 */,
 				F244B8621C7D8BFC00421236 /* AnimationTableViewController.h */,
 				F244B8631C7D8BFC00421236 /* AnimationTableViewController.m */,
@@ -143,6 +144,13 @@
 				F2C8DEDF1C843B3E0050CD8F /* NSTimer+PTTimer.m */,
 			);
 			path = "工具类";
+			sourceTree = "<group>";
+		};
+		F2C8DEE11C8440260050CD8F /* 微博弹出动画效果 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "微博弹出动画效果";
 			sourceTree = "<group>";
 		};
 		F2EC4AD71C7D826200FD4ACE = {
