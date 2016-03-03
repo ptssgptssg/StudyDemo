@@ -16,6 +16,7 @@
 		F27D5F331C85293C00CBE9FD /* WeiboPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27D5F321C85293C00CBE9FD /* WeiboPopViewController.m */; };
 		F27D5F361C8529F100CBE9FD /* PTWeiboMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F27D5F351C8529F100CBE9FD /* PTWeiboMenuView.m */; };
 		F2C8DEE01C843B3E0050CD8F /* NSTimer+PTTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C8DEDF1C843B3E0050CD8F /* NSTimer+PTTimer.m */; };
+		F2D9E14A1C87D3A000DD6409 /* UIView+PTView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D9E1491C87D3A000DD6409 /* UIView+PTView.m */; };
 		F2EC4AE51C7D826200FD4ACE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC4AE41C7D826200FD4ACE /* main.m */; };
 		F2EC4AE81C7D826200FD4ACE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC4AE71C7D826200FD4ACE /* AppDelegate.m */; };
 		F2EC4AEA1C7D826200FD4ACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2EC4AE91C7D826200FD4ACE /* Assets.xcassets */; };
@@ -61,6 +62,8 @@
 		F28D3DE81C7FFFE900F4337F /* PTKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKit.h; sourceTree = "<group>"; };
 		F2C8DEDE1C843B3E0050CD8F /* NSTimer+PTTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+PTTimer.h"; sourceTree = "<group>"; };
 		F2C8DEDF1C843B3E0050CD8F /* NSTimer+PTTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+PTTimer.m"; sourceTree = "<group>"; };
+		F2D9E1481C87D3A000DD6409 /* UIView+PTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PTView.h"; sourceTree = "<group>"; };
+		F2D9E1491C87D3A000DD6409 /* UIView+PTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PTView.m"; sourceTree = "<group>"; };
 		F2EC4AE01C7D826200FD4ACE /* PTKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EC4AE41C7D826200FD4ACE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2EC4AE61C7D826200FD4ACE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 			children = (
 				F2C8DEDE1C843B3E0050CD8F /* NSTimer+PTTimer.h */,
 				F2C8DEDF1C843B3E0050CD8F /* NSTimer+PTTimer.m */,
+				F2D9E1481C87D3A000DD6409 /* UIView+PTView.h */,
+				F2D9E1491C87D3A000DD6409 /* UIView+PTView.m */,
 			);
 			path = "工具类";
 			sourceTree = "<group>";
@@ -394,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F244B8641C7D8BFC00421236 /* AnimationTableViewController.m in Sources */,
+				F2D9E14A1C87D3A000DD6409 /* UIView+PTView.m in Sources */,
 				F2EC4AE81C7D826200FD4ACE /* AppDelegate.m in Sources */,
 				F2EC4AE51C7D826200FD4ACE /* main.m in Sources */,
 				F27D5F361C8529F100CBE9FD /* PTWeiboMenuView.m in Sources */,

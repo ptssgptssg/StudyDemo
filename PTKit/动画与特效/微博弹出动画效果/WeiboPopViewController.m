@@ -7,6 +7,7 @@
 //
 
 #import "WeiboPopViewController.h"
+#import "PTWeiboMenuView.h"
 
 @interface WeiboPopViewController ()
 

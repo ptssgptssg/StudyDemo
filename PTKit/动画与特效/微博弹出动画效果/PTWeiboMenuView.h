@@ -12,4 +12,8 @@ typedef void(^PTWeiboMenuViewCompletionBlock)(void);
 
 @interface PTWeiboMenuView : UIView
 
+- (void)addItemWithTitle:(NSString *)title andIcon:(UIImage *)icon andSelectedBlock:(PTWeiboMenuViewCompletionBlock)block;
+
+- (void)show;
+
 @end
