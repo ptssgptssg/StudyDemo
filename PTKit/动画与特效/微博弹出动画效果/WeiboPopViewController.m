@@ -18,7 +18,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(200, 200, 200, 200);
+    [button setTitle:@"点击" forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor redColor];
+    [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+- (void)click {
+    PTWeiboMenuView *menuView = [[PTWeiboMenuView alloc]init];
     
+    [menuView addItemWithTitle:@"照相机" andIcon:[UIImage imageNamed:@"tabbar_compose_camera"] andSelectedBlock:^{
+    }];
+    [menuView addItemWithTitle:@"照相机" andIcon:[UIImage imageNamed:@"tabbar_compose_idea"] andSelectedBlock:^{
+    }];
+    [menuView addItemWithTitle:@"照相机" andIcon:[UIImage imageNamed:@"tabbar_compose_lbs"]
+        andSelectedBlock:^{
+    }];
+    [menuView addItemWithTitle:@"照相机" andIcon:[UIImage imageNamed:@"tabbar_compose_more"] andSelectedBlock:^{
+    }];
+    [menuView addItemWithTitle:@"照相机" andIcon:[UIImage imageNamed:@"tabbar_compose_photo"] andSelectedBlock:^{
+    }];
+    [menuView addItemWithTitle:@"照相机" andIcon:[UIImage imageNamed:@"tabbar_compose_review"] andSelectedBlock:^{
+    }];
+    
+    [menuView show];
 }
 
 - (void)didReceiveMemoryWarning {
