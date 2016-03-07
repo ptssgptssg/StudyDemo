@@ -1,31 +1,29 @@
 //
-//  MainTableViewController.m
+//  DrawTextTableViewController.m
 //  PTKit
 //
-//  Created by 彭腾 on 16/2/24.
+//  Created by 彭腾 on 16/3/7.
 //  Copyright © 2016年 PT. All rights reserved.
 //
 
-#import "MainTableViewController.h"
-#import "PTKit.h"
+#import "DrawTextTableViewController.h"
 
-@interface MainTableViewController ()
+@interface DrawTextTableViewController ()
 
 @property (nonatomic, strong) NSMutableArray *titles;
+
 @property (nonatomic, strong) NSMutableArray *classNames;
 
 @end
 
-@implementation MainTableViewController
+@implementation DrawTextTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.titles = [NSMutableArray array];
+    self.classNames = [NSMutableArray array];
+    [self addCell:@"CoreText" class:@"CoreTextViewController"];
     
-    _titles = [NSMutableArray array];
-    _classNames = [NSMutableArray array];
-    
-    [self addCell:@"动画与特效" class:@"AnimationTableViewController"];
-    [self addCell:@"绘图与文本" class:@"DrawTextTableViewController"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -54,7 +52,6 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     static NSString *identifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
@@ -63,7 +60,7 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    cell.textLabel.text = _titles[indexPath.row];
+    cell.textLabel.text = self.titles[indexPath.row];
     
     return cell;
 }
@@ -76,7 +73,7 @@
         vc.title = _titles[indexPath.row];
         [self.navigationController pushViewController:vc animated:YES];
     }
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 /*

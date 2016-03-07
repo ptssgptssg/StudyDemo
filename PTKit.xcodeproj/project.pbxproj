@@ -13,6 +13,8 @@
 		F244B8641C7D8BFC00421236 /* AnimationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F244B8631C7D8BFC00421236 /* AnimationTableViewController.m */; };
 		F244B8681C7D8DD800421236 /* TaoBaoPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F244B8671C7D8DD800421236 /* TaoBaoPopViewController.m */; };
 		F244B86B1C7D8E9200421236 /* UIViewController+PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F244B86A1C7D8E9200421236 /* UIViewController+PopAnimation.m */; };
+		F252F86A1C8D5B0800680CBA /* CoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F252F8691C8D5B0800680CBA /* CoreTextViewController.m */; };
+		F252F86D1C8D5CE100680CBA /* DrawTextTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F252F86C1C8D5CE100680CBA /* DrawTextTableViewController.m */; };
 		F27D5F331C85293C00CBE9FD /* WeiboPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27D5F321C85293C00CBE9FD /* WeiboPopViewController.m */; };
 		F27D5F361C8529F100CBE9FD /* PTWeiboMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F27D5F351C8529F100CBE9FD /* PTWeiboMenuView.m */; };
 		F2C8DEE01C843B3E0050CD8F /* NSTimer+PTTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C8DEDF1C843B3E0050CD8F /* NSTimer+PTTimer.m */; };
@@ -55,6 +57,10 @@
 		F244B8671C7D8DD800421236 /* TaoBaoPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaoBaoPopViewController.m; sourceTree = "<group>"; };
 		F244B8691C7D8E9200421236 /* UIViewController+PopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PopAnimation.h"; sourceTree = "<group>"; };
 		F244B86A1C7D8E9200421236 /* UIViewController+PopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PopAnimation.m"; sourceTree = "<group>"; };
+		F252F8681C8D5B0800680CBA /* CoreTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextViewController.h; sourceTree = "<group>"; };
+		F252F8691C8D5B0800680CBA /* CoreTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextViewController.m; sourceTree = "<group>"; };
+		F252F86B1C8D5CE100680CBA /* DrawTextTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTextTableViewController.h; sourceTree = "<group>"; };
+		F252F86C1C8D5CE100680CBA /* DrawTextTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTextTableViewController.m; sourceTree = "<group>"; };
 		F27D5F311C85293C00CBE9FD /* WeiboPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboPopViewController.h; sourceTree = "<group>"; };
 		F27D5F321C85293C00CBE9FD /* WeiboPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboPopViewController.m; sourceTree = "<group>"; };
 		F27D5F341C8529F100CBE9FD /* PTWeiboMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWeiboMenuView.h; sourceTree = "<group>"; };
@@ -146,6 +152,25 @@
 			path = "淘宝View弹出效果";
 			sourceTree = "<group>";
 		};
+		F252F8661C8D5AE500680CBA /* 绘图与文本 */ = {
+			isa = PBXGroup;
+			children = (
+				F252F8671C8D5AE500680CBA /* CoreText */,
+				F252F86B1C8D5CE100680CBA /* DrawTextTableViewController.h */,
+				F252F86C1C8D5CE100680CBA /* DrawTextTableViewController.m */,
+			);
+			path = "绘图与文本";
+			sourceTree = "<group>";
+		};
+		F252F8671C8D5AE500680CBA /* CoreText */ = {
+			isa = PBXGroup;
+			children = (
+				F252F8681C8D5B0800680CBA /* CoreTextViewController.h */,
+				F252F8691C8D5B0800680CBA /* CoreTextViewController.m */,
+			);
+			path = CoreText;
+			sourceTree = "<group>";
+		};
 		F2C8DEDD1C8439C80050CD8F /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +218,7 @@
 		F2EC4AE21C7D826200FD4ACE /* PTKit */ = {
 			isa = PBXGroup;
 			children = (
+				F252F8661C8D5AE500680CBA /* 绘图与文本 */,
 				F2C8DEDD1C8439C80050CD8F /* 工具类 */,
 				F244B85C1C7D859300421236 /* 动画与特效 */,
 				F2EC4AE61C7D826200FD4ACE /* AppDelegate.h */,
@@ -400,6 +426,7 @@
 			files = (
 				F244B8641C7D8BFC00421236 /* AnimationTableViewController.m in Sources */,
 				F2D9E14A1C87D3A000DD6409 /* UIView+PTView.m in Sources */,
+				F252F86D1C8D5CE100680CBA /* DrawTextTableViewController.m in Sources */,
 				F2EC4AE81C7D826200FD4ACE /* AppDelegate.m in Sources */,
 				F2EC4AE51C7D826200FD4ACE /* main.m in Sources */,
 				F27D5F361C8529F100CBE9FD /* PTWeiboMenuView.m in Sources */,
@@ -408,6 +435,7 @@
 				F244B86B1C7D8E9200421236 /* UIViewController+PopAnimation.m in Sources */,
 				F2C8DEE01C843B3E0050CD8F /* NSTimer+PTTimer.m in Sources */,
 				F27D5F331C85293C00CBE9FD /* WeiboPopViewController.m in Sources */,
+				F252F86A1C8D5B0800680CBA /* CoreTextViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
