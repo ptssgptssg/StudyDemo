@@ -7,6 +7,8 @@
 //
 
 #import "CoreTextViewController.h"
+#import "PTDisplayView.h"
+#import "PTKit.h"
 
 @interface CoreTextViewController ()
 
@@ -17,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    PTDisplayView *view = [[PTDisplayView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+    view.center = CGPointMake(self.view.width/2, self.view.height/2);
+    [self.view addSubview:view];
 }
 
 - (void)didReceiveMemoryWarning {

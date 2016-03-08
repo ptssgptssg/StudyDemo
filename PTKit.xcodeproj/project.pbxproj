@@ -15,7 +15,6 @@
 		F244B86B1C7D8E9200421236 /* UIViewController+PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F244B86A1C7D8E9200421236 /* UIViewController+PopAnimation.m */; };
 		F252F86A1C8D5B0800680CBA /* CoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F252F8691C8D5B0800680CBA /* CoreTextViewController.m */; };
 		F252F86D1C8D5CE100680CBA /* DrawTextTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F252F86C1C8D5CE100680CBA /* DrawTextTableViewController.m */; };
-		F252F8701C8D74AB00680CBA /* PTDisplayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F252F86F1C8D74AB00680CBA /* PTDisplayerView.m */; };
 		F27D5F331C85293C00CBE9FD /* WeiboPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27D5F321C85293C00CBE9FD /* WeiboPopViewController.m */; };
 		F27D5F361C8529F100CBE9FD /* PTWeiboMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F27D5F351C8529F100CBE9FD /* PTWeiboMenuView.m */; };
 		F2C8DEE01C843B3E0050CD8F /* NSTimer+PTTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C8DEDF1C843B3E0050CD8F /* NSTimer+PTTimer.m */; };
@@ -26,6 +25,10 @@
 		F2EC4AED1C7D826200FD4ACE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2EC4AEB1C7D826200FD4ACE /* LaunchScreen.storyboard */; };
 		F2EC4AF81C7D826200FD4ACE /* PTKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC4AF71C7D826200FD4ACE /* PTKitTests.m */; };
 		F2EC4B031C7D826200FD4ACE /* PTKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC4B021C7D826200FD4ACE /* PTKitUITests.m */; };
+		F2F409371C8E607C0007D73D /* PTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F409361C8E607C0007D73D /* PTDisplayView.m */; };
+		F2F4093A1C8E63BD0007D73D /* PTFrameParserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F409391C8E63BD0007D73D /* PTFrameParserConfig.m */; };
+		F2F4093D1C8E63CF0007D73D /* PTFrameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F4093C1C8E63CF0007D73D /* PTFrameParser.m */; };
+		F2F409401C8E63F10007D73D /* CoreTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F4093F1C8E63F10007D73D /* CoreTextData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +65,6 @@
 		F252F8691C8D5B0800680CBA /* CoreTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextViewController.m; sourceTree = "<group>"; };
 		F252F86B1C8D5CE100680CBA /* DrawTextTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTextTableViewController.h; sourceTree = "<group>"; };
 		F252F86C1C8D5CE100680CBA /* DrawTextTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTextTableViewController.m; sourceTree = "<group>"; };
-		F252F86E1C8D74AB00680CBA /* PTDisplayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDisplayerView.h; sourceTree = "<group>"; };
-		F252F86F1C8D74AB00680CBA /* PTDisplayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDisplayerView.m; sourceTree = "<group>"; };
 		F27D5F311C85293C00CBE9FD /* WeiboPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboPopViewController.h; sourceTree = "<group>"; };
 		F27D5F321C85293C00CBE9FD /* WeiboPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboPopViewController.m; sourceTree = "<group>"; };
 		F27D5F341C8529F100CBE9FD /* PTWeiboMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWeiboMenuView.h; sourceTree = "<group>"; };
@@ -86,6 +87,14 @@
 		F2EC4AFE1C7D826200FD4ACE /* PTKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EC4B021C7D826200FD4ACE /* PTKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTKitUITests.m; sourceTree = "<group>"; };
 		F2EC4B041C7D826200FD4ACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2F409351C8E607C0007D73D /* PTDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDisplayView.h; sourceTree = "<group>"; };
+		F2F409361C8E607C0007D73D /* PTDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDisplayView.m; sourceTree = "<group>"; };
+		F2F409381C8E63BD0007D73D /* PTFrameParserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFrameParserConfig.h; sourceTree = "<group>"; };
+		F2F409391C8E63BD0007D73D /* PTFrameParserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTFrameParserConfig.m; sourceTree = "<group>"; };
+		F2F4093B1C8E63CF0007D73D /* PTFrameParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFrameParser.h; sourceTree = "<group>"; };
+		F2F4093C1C8E63CF0007D73D /* PTFrameParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTFrameParser.m; sourceTree = "<group>"; };
+		F2F4093E1C8E63F10007D73D /* CoreTextData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextData.h; sourceTree = "<group>"; };
+		F2F4093F1C8E63F10007D73D /* CoreTextData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +179,14 @@
 			children = (
 				F252F8681C8D5B0800680CBA /* CoreTextViewController.h */,
 				F252F8691C8D5B0800680CBA /* CoreTextViewController.m */,
-				F252F86E1C8D74AB00680CBA /* PTDisplayerView.h */,
-				F252F86F1C8D74AB00680CBA /* PTDisplayerView.m */,
+				F2F409351C8E607C0007D73D /* PTDisplayView.h */,
+				F2F409361C8E607C0007D73D /* PTDisplayView.m */,
+				F2F409381C8E63BD0007D73D /* PTFrameParserConfig.h */,
+				F2F409391C8E63BD0007D73D /* PTFrameParserConfig.m */,
+				F2F4093B1C8E63CF0007D73D /* PTFrameParser.h */,
+				F2F4093C1C8E63CF0007D73D /* PTFrameParser.m */,
+				F2F4093E1C8E63F10007D73D /* CoreTextData.h */,
+				F2F4093F1C8E63F10007D73D /* CoreTextData.m */,
 			);
 			path = CoreText;
 			sourceTree = "<group>";
@@ -430,15 +445,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F244B8641C7D8BFC00421236 /* AnimationTableViewController.m in Sources */,
+				F2F409401C8E63F10007D73D /* CoreTextData.m in Sources */,
 				F2D9E14A1C87D3A000DD6409 /* UIView+PTView.m in Sources */,
 				F252F86D1C8D5CE100680CBA /* DrawTextTableViewController.m in Sources */,
 				F2EC4AE81C7D826200FD4ACE /* AppDelegate.m in Sources */,
 				F2EC4AE51C7D826200FD4ACE /* main.m in Sources */,
 				F27D5F361C8529F100CBE9FD /* PTWeiboMenuView.m in Sources */,
+				F2F4093D1C8E63CF0007D73D /* PTFrameParser.m in Sources */,
 				F244B85F1C7D85BC00421236 /* MainTableViewController.m in Sources */,
 				F244B8681C7D8DD800421236 /* TaoBaoPopViewController.m in Sources */,
-				F252F8701C8D74AB00680CBA /* PTDisplayerView.m in Sources */,
+				F2F409371C8E607C0007D73D /* PTDisplayView.m in Sources */,
 				F244B86B1C7D8E9200421236 /* UIViewController+PopAnimation.m in Sources */,
+				F2F4093A1C8E63BD0007D73D /* PTFrameParserConfig.m in Sources */,
 				F2C8DEE01C843B3E0050CD8F /* NSTimer+PTTimer.m in Sources */,
 				F27D5F331C85293C00CBE9FD /* WeiboPopViewController.m in Sources */,
 				F252F86A1C8D5B0800680CBA /* CoreTextViewController.m in Sources */,
