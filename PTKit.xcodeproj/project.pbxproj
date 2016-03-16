@@ -167,6 +167,7 @@
 		F252F8661C8D5AE500680CBA /* 绘图与文本 */ = {
 			isa = PBXGroup;
 			children = (
+				F27BE8041C9955A9008D6A40 /* PTLabel */,
 				F252F8671C8D5AE500680CBA /* CoreText */,
 				F252F86B1C8D5CE100680CBA /* DrawTextTableViewController.h */,
 				F252F86C1C8D5CE100680CBA /* DrawTextTableViewController.m */,
@@ -189,6 +190,13 @@
 				F2F4093F1C8E63F10007D73D /* CoreTextData.m */,
 			);
 			path = CoreText;
+			sourceTree = "<group>";
+		};
+		F27BE8041C9955A9008D6A40 /* PTLabel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PTLabel;
 			sourceTree = "<group>";
 		};
 		F2C8DEDD1C8439C80050CD8F /* 工具类 */ = {
