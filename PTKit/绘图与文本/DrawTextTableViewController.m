@@ -73,6 +73,7 @@
         vc.title = _titles[indexPath.row];
         [self.navigationController pushViewController:vc animated:YES];
     }
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

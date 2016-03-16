@@ -9,6 +9,10 @@
 #import "PTDisplayView.h"
 #import <CoreText/CoreText.h>
 
+@interface PTDisplayView ()
+
+@end
+
 @implementation PTDisplayView
 
 - (id)initWithFrame:(CGRect)frame {
@@ -30,24 +34,34 @@
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
     
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    
+//    CGContextSetTextMatrix(context, CGAffineTransformIdentity);
+//    CGContextTranslateCTM(context, 0, self.bounds.size.height);
+//    CGContextScaleCTM(context, 1.0, -1.0);
+//    
+//    CGMutablePathRef path = CGPathCreateMutable();
+//    CGPathAddRect(path, NULL, self.bounds);
+//    
+//    NSAttributedString *attrString = [[NSAttributedString alloc]initWithString:@"123123123123123123123123123123123123123123123123123123123123123123123123123123123"];
+//    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((CFAttributedStringRef)attrString);
+//    CTFrameRef frame = CTFramesetterCreateFrame(framesetter, CFRangeMake(0, [attrString length]), path, NULL);
+//    
+//    CTFrameDraw(frame, context);
+//    
+//    CFRelease(frame);
+//    CFRelease(path);
+//    CFRelease(framesetter);
+    
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     CGContextSetTextMatrix(context, CGAffineTransformIdentity);
     CGContextTranslateCTM(context, 0, self.bounds.size.height);
     CGContextScaleCTM(context, 1.0, -1.0);
     
-    CGMutablePathRef path = CGPathCreateMutable();
-    CGPathAddRect(path, NULL, self.bounds);
-    
-    NSAttributedString *attrString = [[NSAttributedString alloc]initWithString:@"123123123123123123123123123123123123123123123123123123123123123123123123123123123"];
-    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((CFAttributedStringRef)attrString);
-    CTFrameRef frame = CTFramesetterCreateFrame(framesetter, CFRangeMake(0, [attrString length]), path, NULL);
-    
-    CTFrameDraw(frame, context);
-    
-    CFRelease(frame);
-    CFRelease(path);
-    CFRelease(framesetter);
+    if (self.data) {
+        CTFrameDraw(self.data.ctFrame, context);
+    }
 }
 
 

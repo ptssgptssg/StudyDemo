@@ -9,6 +9,9 @@
 #import "CoreTextViewController.h"
 #import "PTDisplayView.h"
 #import "PTKit.h"
+#import "CoreTextData.h"
+#import "PTFrameParserConfig.h"
+#import "PTFrameParser.h"
 
 @interface CoreTextViewController ()
 
@@ -22,6 +25,14 @@
     PTDisplayView *view = [[PTDisplayView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
     view.center = CGPointMake(self.view.width/2, self.view.height/2);
     [self.view addSubview:view];
+    
+    PTFrameParserConfig *config = [[PTFrameParserConfig alloc]init];
+    config.textColor = [UIColor whiteColor];
+    config.width = 100;
+    
+    CoreTextData *data = [PTFrameParser parseContent:@"123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123" config:config];
+    view.data = data;
+    view.height = data.height;
 }
 
 - (void)didReceiveMemoryWarning {

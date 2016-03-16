@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoreTextData.h"
 
 @interface PTDisplayView : UIView
+
+@property (nonatomic, strong) CoreTextData *data;
 
 @end

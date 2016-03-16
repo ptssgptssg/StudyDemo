@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CoreTextData.h"
+#import "PTFrameParserConfig.h"
 
 @interface PTFrameParser : NSObject
+
++ (CoreTextData *)parseContent:(NSString *)content config:(PTFrameParserConfig *)config;
 
 @end
