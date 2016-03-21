@@ -19,3 +19,4 @@
 //工具类
 #import "NSTimer+PTTimer.h"
 #import "UIView+PTView.h"
+#import "NSAttributedString+PTNSAttributedString.h"

@@ -29,6 +29,7 @@
 		F2F4093A1C8E63BD0007D73D /* PTFrameParserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F409391C8E63BD0007D73D /* PTFrameParserConfig.m */; };
 		F2F4093D1C8E63CF0007D73D /* PTFrameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F4093C1C8E63CF0007D73D /* PTFrameParser.m */; };
 		F2F409401C8E63F10007D73D /* CoreTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F4093F1C8E63F10007D73D /* CoreTextData.m */; };
+		F2FAF6C01C9F93B900200FC1 /* NSAttributedString+PTNSAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FAF6BF1C9F93B900200FC1 /* NSAttributedString+PTNSAttributedString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,8 @@
 		F2F4093C1C8E63CF0007D73D /* PTFrameParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTFrameParser.m; sourceTree = "<group>"; };
 		F2F4093E1C8E63F10007D73D /* CoreTextData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextData.h; sourceTree = "<group>"; };
 		F2F4093F1C8E63F10007D73D /* CoreTextData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextData.m; sourceTree = "<group>"; };
+		F2FAF6BE1C9F93B900200FC1 /* NSAttributedString+PTNSAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+PTNSAttributedString.h"; sourceTree = "<group>"; };
+		F2FAF6BF1C9F93B900200FC1 /* NSAttributedString+PTNSAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+PTNSAttributedString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +209,8 @@
 				F2C8DEDF1C843B3E0050CD8F /* NSTimer+PTTimer.m */,
 				F2D9E1481C87D3A000DD6409 /* UIView+PTView.h */,
 				F2D9E1491C87D3A000DD6409 /* UIView+PTView.m */,
+				F2FAF6BE1C9F93B900200FC1 /* NSAttributedString+PTNSAttributedString.h */,
+				F2FAF6BF1C9F93B900200FC1 /* NSAttributedString+PTNSAttributedString.m */,
 			);
 			path = "工具类";
 			sourceTree = "<group>";
@@ -464,6 +469,7 @@
 				F244B8681C7D8DD800421236 /* TaoBaoPopViewController.m in Sources */,
 				F2F409371C8E607C0007D73D /* PTDisplayView.m in Sources */,
 				F244B86B1C7D8E9200421236 /* UIViewController+PopAnimation.m in Sources */,
+				F2FAF6C01C9F93B900200FC1 /* NSAttributedString+PTNSAttributedString.m in Sources */,
 				F2F4093A1C8E63BD0007D73D /* PTFrameParserConfig.m in Sources */,
 				F2C8DEE01C843B3E0050CD8F /* NSTimer+PTTimer.m in Sources */,
 				F27D5F331C85293C00CBE9FD /* WeiboPopViewController.m in Sources */,
