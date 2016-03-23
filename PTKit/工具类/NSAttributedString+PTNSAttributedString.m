@@ -15,6 +15,7 @@
     CTFramesetterRef framesetterRef = CTFramesetterCreateWithAttributedString((CFAttributedStringRef)string);
     CGSize restrictSize = CGSizeMake(width, CGFLOAT_MAX);
     CGSize coretextSize = CTFramesetterSuggestFrameSizeWithConstraints(framesetterRef, CFRangeMake(0, 0), nil, restrictSize, nil);
+    CFRelease(framesetterRef);
     return coretextSize.height;
 }
 
