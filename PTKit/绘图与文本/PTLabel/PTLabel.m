@@ -8,10 +8,11 @@
 
 #import "PTLabel.h"
 #import "PTTextLayout.h"
-#import "PTTextParser.h"
+#import "PTDisplayLayer.h"
 
-@interface PTLabel () {
+@interface PTLabel ()<PTDisplayLayerDelegate> {
     NSMutableAttributedString *_sourceText;
+    PTTextLayout *_sourceLayout;
 }
 
 @end
@@ -47,6 +48,10 @@
 
 - (void)setNumberOfLines:(NSInteger)numberOfLines {
     _numberOfLines = numberOfLines;
+}
+
+- (void)drawRect:(CGRect)rect {
+    
 }
 
 /*

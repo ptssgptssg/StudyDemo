@@ -10,4 +10,6 @@
 
 @interface PTTextLayout : NSObject
 
++ (PTTextLayout *)layoutWithText:(NSAttributedString *)text;
+
 @end
