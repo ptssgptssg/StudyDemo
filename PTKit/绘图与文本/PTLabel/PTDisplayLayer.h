@@ -6,6 +6,7 @@
 //  Copyright © 2016年 PT. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
 @interface PTDisplayLayer : CALayer

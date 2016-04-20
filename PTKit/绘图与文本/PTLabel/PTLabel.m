@@ -27,11 +27,16 @@
     return self;
 }
 
++ (Class)layerClass {
+    return [PTDisplayLayer class];
+}
+
 - (void)initLabel {
     self.layer.contentsScale = [UIScreen mainScreen].scale;
     self.contentMode = UIViewContentModeRedraw;
     _numberOfLines = 1;
     _sourceText = [NSMutableAttributedString new];
+    [self.layer setNeedsDisplay];
 }
 
 - (void)setText:(NSString *)text {
@@ -50,8 +55,15 @@
     _numberOfLines = numberOfLines;
 }
 
-- (void)drawRect:(CGRect)rect {
-    
+- (void)displayAsyncLayer:(PTDisplayLayer *)asyncLayer asynchronously:(BOOL)asynchronously {
+    __block PTTextLayout *layout = _sourceLayout;
+    CGPoint point = CGPointZero;
+    UIGraphicsBeginImageContextWithOptions(self.layer.bounds.size, self.layer.opaque, self.layer.contentsScale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [layout drawInContext:context size:self.layer.bounds.size point:point view:nil layer:nil];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    self.layer.contents = (__bridge id)image.CGImage;
 }
 
 /*

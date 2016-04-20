@@ -7,9 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreText/CoreText.h>
 
 @interface PTTextLayout : NSObject
 
-+ (PTTextLayout *)layoutWithText:(NSAttributedString *)text;
+- (void)drawInContext:(CGContextRef)context
+                 size:(CGSize)size
+                point:(CGPoint)point
+                 view:(UIView *)view
+                layer:(CALayer *)layer;
 
 @end

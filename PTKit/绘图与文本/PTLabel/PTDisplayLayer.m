@@ -28,7 +28,8 @@
 }
 
 - (void)display:(BOOL)asynchronously {
-    [_asyncDelegate displayAsyncLayer:self asynchronously:asynchronously];
+    __strong id<PTDisplayLayerDelegate> delegate = self.delegate;
+    [delegate displayAsyncLayer:self asynchronously:asynchronously];
 }
 
 @end
