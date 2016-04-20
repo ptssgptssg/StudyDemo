@@ -56,7 +56,7 @@
 }
 
 - (void)displayAsyncLayer:(PTDisplayLayer *)asyncLayer asynchronously:(BOOL)asynchronously {
-    __block PTTextLayout *layout = _sourceLayout;
+    __block PTTextLayout *layout = [[PTTextLayout alloc]init];
     CGPoint point = CGPointZero;
     UIGraphicsBeginImageContextWithOptions(self.layer.bounds.size, self.layer.opaque, self.layer.contentsScale);
     CGContextRef context = UIGraphicsGetCurrentContext();

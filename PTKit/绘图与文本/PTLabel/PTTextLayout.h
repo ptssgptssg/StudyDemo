@@ -10,7 +10,13 @@
 #import <UIKit/UIKit.h>
 #import <CoreText/CoreText.h>
 
+
+
 @interface PTTextLayout : NSObject
+
++ (PTTextLayout *)layoutWithSize:(CGSize)size text:(NSAttributedString *)text;
+
++ (PTTextLayout *)layoutWithSize:(CGSize)size text:(NSAttributedString *)text range:(NSRange)range;
 
 - (void)drawInContext:(CGContextRef)context
                  size:(CGSize)size
