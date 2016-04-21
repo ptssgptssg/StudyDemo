@@ -10,9 +10,18 @@
 #import <UIKit/UIKit.h>
 #import <CoreText/CoreText.h>
 
-
+#import "PTTextLine.h"
 
 @interface PTTextLayout : NSObject
+
+@property (nonatomic, readonly) NSAttributedString *text;
+@property (nonatomic, readonly) CTFramesetterRef frameSetter;
+@property (nonatomic, readonly) CTFrameRef frame;
+@property (nonatomic, readonly) NSArray *lines;
+@property (nonatomic, readonly) NSUInteger rowCount;
+@property (nonatomic, readonly) NSRange visibleRange;
+@property (nonatomic, readonly) CGRect textBoundingRect;
+@property (nonatomic, readonly) CGSize textBoundingSize;
 
 + (PTTextLayout *)layoutWithSize:(CGSize)size text:(NSAttributedString *)text;
 

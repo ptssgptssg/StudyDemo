@@ -29,6 +29,7 @@
 		F2EC4AED1C7D826200FD4ACE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2EC4AEB1C7D826200FD4ACE /* LaunchScreen.storyboard */; };
 		F2EC4AF81C7D826200FD4ACE /* PTKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC4AF71C7D826200FD4ACE /* PTKitTests.m */; };
 		F2EC4B031C7D826200FD4ACE /* PTKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC4B021C7D826200FD4ACE /* PTKitUITests.m */; };
+		F2EFACAA1CC8755600609DB9 /* PTTextLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EFACA91CC8755600609DB9 /* PTTextLine.m */; };
 		F2F409371C8E607C0007D73D /* PTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F409361C8E607C0007D73D /* PTDisplayView.m */; };
 		F2F4093A1C8E63BD0007D73D /* PTFrameParserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F409391C8E63BD0007D73D /* PTFrameParserConfig.m */; };
 		F2F4093D1C8E63CF0007D73D /* PTFrameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F4093C1C8E63CF0007D73D /* PTFrameParser.m */; };
@@ -100,6 +101,8 @@
 		F2EC4AFE1C7D826200FD4ACE /* PTKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EC4B021C7D826200FD4ACE /* PTKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTKitUITests.m; sourceTree = "<group>"; };
 		F2EC4B041C7D826200FD4ACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2EFACA81CC8755600609DB9 /* PTTextLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTextLine.h; sourceTree = "<group>"; };
+		F2EFACA91CC8755600609DB9 /* PTTextLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTextLine.m; sourceTree = "<group>"; };
 		F2F409351C8E607C0007D73D /* PTDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDisplayView.h; sourceTree = "<group>"; };
 		F2F409361C8E607C0007D73D /* PTDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDisplayView.m; sourceTree = "<group>"; };
 		F2F409381C8E63BD0007D73D /* PTFrameParserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFrameParserConfig.h; sourceTree = "<group>"; };
@@ -218,6 +221,8 @@
 				F28469D71CA513BD00E64CFA /* PTTextParser.m */,
 				F2A6C0E51CAD01DB00A57E13 /* PTDisplayLayer.h */,
 				F2A6C0E61CAD01DB00A57E13 /* PTDisplayLayer.m */,
+				F2EFACA81CC8755600609DB9 /* PTTextLine.h */,
+				F2EFACA91CC8755600609DB9 /* PTTextLine.m */,
 			);
 			path = PTLabel;
 			sourceTree = "<group>";
@@ -481,6 +486,7 @@
 				F2F409401C8E63F10007D73D /* CoreTextData.m in Sources */,
 				F2D9E14A1C87D3A000DD6409 /* UIView+PTView.m in Sources */,
 				F252F86D1C8D5CE100680CBA /* DrawTextTableViewController.m in Sources */,
+				F2EFACAA1CC8755600609DB9 /* PTTextLine.m in Sources */,
 				F2EC4AE81C7D826200FD4ACE /* AppDelegate.m in Sources */,
 				F2EC4AE51C7D826200FD4ACE /* main.m in Sources */,
 				F27D5F361C8529F100CBE9FD /* PTWeiboMenuView.m in Sources */,
