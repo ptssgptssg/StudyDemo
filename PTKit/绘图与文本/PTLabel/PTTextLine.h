@@ -20,6 +20,13 @@
 @property (nonatomic, readonly) NSRange range;     
 
 @property (nonatomic, readonly) CGRect bounds;
+@property (nonatomic, readonly) CGSize size;
+@property (nonatomic, readonly) CGFloat width;
+@property (nonatomic, readonly) CGFloat height;
+@property (nonatomic, readonly) CGFloat top;
+@property (nonatomic, readonly) CGFloat bottom;
+@property (nonatomic, readonly) CGFloat left;
+@property (nonatomic, readonly) CGFloat right;
 
 @property (nonatomic, assign) CGPoint position;
 @property (nonatomic, readonly) CGFloat ascent;     

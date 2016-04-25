@@ -18,4 +18,6 @@
 
 @property (nonatomic) NSInteger numberOfLines;
 
+@property (nonatomic, assign) NSTextAlignment textAlignment;
+
 @end

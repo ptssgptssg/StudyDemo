@@ -35,6 +35,8 @@
 //    view.data = data;
 //    view.height = data.height;
     PTLabel *label = [PTLabel new];
+    label.frame = CGRectMake(100, 100, 100, 100);
+    label.backgroundColor = [UIColor redColor];
     label.text = @"1111";
     [self.view addSubview:label];
 }

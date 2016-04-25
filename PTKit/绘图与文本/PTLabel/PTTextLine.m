@@ -47,6 +47,7 @@
             }else {
                 _firstGlyphPos = 0;
             }
+            //获取一行未尾字符后空格的像素长度
             _trailingWhitespaceWidth = CTLineGetTrailingWhitespaceWidth(_CTLine);
         }else {
             _lineWidth = _ascent = _descent = _leading = _firstGlyphPos = _trailingWhitespaceWidth = 0;
@@ -59,6 +60,39 @@
 - (void)reloadBounds {
     _bounds = CGRectMake(_position.x, _position.y - _ascent, _lineWidth, _ascent + _descent);
     _bounds.origin.x += _firstGlyphPos;
+    
+    if (!_CTLine) return;
+    CFArrayRef runs = CTLineGetGlyphRuns(_CTLine);
+    NSUInteger runCount = CFArrayGetCount(runs);
+    if (runCount == 0) return;
+}
+
+- (CGSize)size {
+    return _bounds.size;
+}
+
+- (CGFloat)width {
+    return CGRectGetWidth(_bounds);
+}
+
+- (CGFloat)height {
+    return CGRectGetHeight(_bounds);
+}
+
+- (CGFloat)top {
+    return CGRectGetMinY(_bounds);
+}
+
+- (CGFloat)bottom {
+    return CGRectGetMaxY(_bounds);
+}
+
+- (CGFloat)left {
+    return CGRectGetMinX(_bounds);
+}
+
+- (CGFloat)right {
+    return CGRectGetMaxX(_bounds);
 }
 
 @end

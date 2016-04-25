@@ -177,23 +177,14 @@ static void PTTextDrawText(PTTextLayout *layout, CGContextRef context, CGSize si
         NSArray *lines = layout.lines;
         for (NSUInteger i = 0; i < lines.count; i++) {
             PTTextLine *line = lines[i];
-            
+            CGContextSetTextMatrix(context, CGAffineTransformIdentity);
+            CGContextSetTextPosition(context, line.position.x, size.height - line.position.y);
+            CFArrayRef runs = CTLineGetGlyphRuns(line.CTLine);
+            for (NSUInteger i = 0; i < CFArrayGetCount(runs); i++) {
+                CTRunRef run = CFArrayGetValueAtIndex(runs, i);
+                CTRunDraw(run, context, CFRangeMake(0, 0));
+            }
         }
-//        NSArray *lines = layout.lines;
-//        for (NSUInteger l = 0, lMax = lines.count; l < lMax; l++) {
-//            YYTextLine *line = lines[l];
-//            if (layout.truncatedLine && layout.truncatedLine.index == line.index) line = layout.truncatedLine;
-//            NSArray *lineRunRanges = line.verticalRotateRange;
-//            CGContextSetTextMatrix(context, CGAffineTransformIdentity);
-//            CGContextSetTextPosition(context, line.position.x + verticalOffset, size.height - line.position.y);
-//            CFArrayRef runs = CTLineGetGlyphRuns(line.CTLine);
-//            for (NSUInteger r = 0, rMax = CFArrayGetCount(runs); r < rMax; r++) {
-//                CTRunRef run = CFArrayGetValueAtIndex(runs, r);
-//                YYTextDrawRun(line, run, context, size, isVertical, lineRunRanges[r], verticalOffset);
-//            }
-//            if (cancel && cancel()) break;
-//        }
-        
     } CGContextRestoreGState(context);
 }
 

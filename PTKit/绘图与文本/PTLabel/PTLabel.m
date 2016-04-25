@@ -41,6 +41,7 @@
 
 - (void)setText:(NSString *)text {
     _text = text.copy;
+    _sourceText = [[NSMutableAttributedString alloc]initWithString:_text];
 }
 
 - (void)setAttributedText:(NSAttributedString *)attributedText {
@@ -55,8 +56,13 @@
     _numberOfLines = numberOfLines;
 }
 
+- (void)setTextAlignment:(NSTextAlignment)textAlignment {
+    _textAlignment = textAlignment;
+}
+
 - (void)displayAsyncLayer:(PTDisplayLayer *)asyncLayer asynchronously:(BOOL)asynchronously {
     __block PTTextLayout *layout = [[PTTextLayout alloc]init];
+    layout = [PTTextLayout layoutWithSize:self.bounds.size text:_sourceText];
     CGPoint point = CGPointZero;
     UIGraphicsBeginImageContextWithOptions(self.layer.bounds.size, self.layer.opaque, self.layer.contentsScale);
     CGContextRef context = UIGraphicsGetCurrentContext();
