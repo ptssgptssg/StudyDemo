@@ -11,6 +11,7 @@
 //大分类
 #import "AnimationTableViewController.h"
 #import "DrawTextTableViewController.h"
+#import "MovieTableViewController.h"
 
 //小分类
 #import "TaoBaoPopViewController.h"

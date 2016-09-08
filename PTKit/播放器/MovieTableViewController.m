@@ -1,42 +1,33 @@
 //
-//  MainTableViewController.m
+//  MovieTableViewController.m
 //  PTKit
 //
-//  Created by 彭腾 on 16/2/24.
+//  Created by 彭腾 on 16/9/6.
 //  Copyright © 2016年 PT. All rights reserved.
 //
 
-#import "MainTableViewController.h"
-#import "PTKit.h"
+#import "MovieTableViewController.h"
 
-@interface MainTableViewController ()
+@interface MovieTableViewController ()
 
-@property (nonatomic, strong) NSMutableArray *titles;
-@property (nonatomic, strong) NSMutableArray *classNames;
+@property (nonatomic, strong) NSArray *movieArray;
 
 @end
 
-@implementation MainTableViewController
+@implementation MovieTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    _titles = [NSMutableArray array];
-    _classNames = [NSMutableArray array];
-    
-    [self addCell:@"动画与特效" class:@"AnimationTableViewController"];
-    [self addCell:@"绘图与文本" class:@"DrawTextTableViewController"];
-    [self addCell:@"播放器" class:@"MovieTableViewController"];
+    _movieArray = @[@"http://www.wowza.com/_h264/BigBuckBunny_175k.mov",
+                    @"rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov",
+                    @"http://santai.tv/vod/test/test_format_1.3gp",
+                    @"http://santai.tv/vod/test/test_format_1.mp4",
+                    @"rtmp://live.hkstv.hk.lxdns.com/live/hks"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)addCell:(NSString *)title class:(NSString *)className {
-    [self.titles addObject:title];
-    [self.classNames addObject:className];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,33 +42,23 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _titles.count;
+    return _movieArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     static NSString *identifier = @"Cell";
-    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    
-    if (!cell) {
+    if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    
-    cell.textLabel.text = _titles[indexPath.row];
-    
+    NSString *path = _movieArray[indexPath.row];
+    cell.textLabel.text = path.lastPathComponent;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *className = _classNames[indexPath.row];
-    Class class = NSClassFromString(className);
-    if (class) {
-        UIViewController *vc = class.new;
-        vc.title = _titles[indexPath.row];
-        [self.navigationController pushViewController:vc animated:YES];
-    }
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 /*

@@ -16,6 +16,8 @@
 		F244B86B1C7D8E9200421236 /* UIViewController+PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F244B86A1C7D8E9200421236 /* UIViewController+PopAnimation.m */; };
 		F252F86A1C8D5B0800680CBA /* CoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F252F8691C8D5B0800680CBA /* CoreTextViewController.m */; };
 		F252F86D1C8D5CE100680CBA /* DrawTextTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F252F86C1C8D5CE100680CBA /* DrawTextTableViewController.m */; };
+		F254554A1D7E9E0800A75FC7 /* MovieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F25455491D7E9E0800A75FC7 /* MovieTableViewController.m */; };
+		F254554E1D7EC6AC00A75FC7 /* PTDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F254554D1D7EC6AC00A75FC7 /* PTDecoder.m */; };
 		F27D5F331C85293C00CBE9FD /* WeiboPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27D5F321C85293C00CBE9FD /* WeiboPopViewController.m */; };
 		F27D5F361C8529F100CBE9FD /* PTWeiboMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F27D5F351C8529F100CBE9FD /* PTWeiboMenuView.m */; };
 		F28469D51CA50FE400E64CFA /* PTTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F28469D41CA50FE400E64CFA /* PTTextLayout.m */; };
@@ -36,7 +38,9 @@
 		F2CD58391CDB3F1B0004A0BB /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CD58381CDB3F1B0004A0BB /* libiconv.tbd */; };
 		F2CD583B1CDB3F770004A0BB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CD583A1CDB3F770004A0BB /* libz.tbd */; };
 		F2CD583D1CDB3F8D0004A0BB /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CD583C1CDB3F8D0004A0BB /* libbz2.tbd */; };
+		F2D03D1A1D7FB10000DAF199 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E3F1221D7FADF50021F18D /* VideoToolbox.framework */; };
 		F2D9E14A1C87D3A000DD6409 /* UIView+PTView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D9E1491C87D3A000DD6409 /* UIView+PTView.m */; };
+		F2E3F1211D7FA38A0021F18D /* PTPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E3F1201D7FA38A0021F18D /* PTPlayerViewController.m */; };
 		F2EC4AE51C7D826200FD4ACE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC4AE41C7D826200FD4ACE /* main.m */; };
 		F2EC4AE81C7D826200FD4ACE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC4AE71C7D826200FD4ACE /* AppDelegate.m */; };
 		F2EC4AEA1C7D826200FD4ACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2EC4AE91C7D826200FD4ACE /* Assets.xcassets */; };
@@ -87,6 +91,10 @@
 		F252F8691C8D5B0800680CBA /* CoreTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextViewController.m; sourceTree = "<group>"; };
 		F252F86B1C8D5CE100680CBA /* DrawTextTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTextTableViewController.h; sourceTree = "<group>"; };
 		F252F86C1C8D5CE100680CBA /* DrawTextTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTextTableViewController.m; sourceTree = "<group>"; };
+		F25455481D7E9E0800A75FC7 /* MovieTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTableViewController.h; sourceTree = "<group>"; };
+		F25455491D7E9E0800A75FC7 /* MovieTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewController.m; sourceTree = "<group>"; };
+		F254554C1D7EC6AC00A75FC7 /* PTDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDecoder.h; sourceTree = "<group>"; };
+		F254554D1D7EC6AC00A75FC7 /* PTDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDecoder.m; sourceTree = "<group>"; };
 		F27D5F311C85293C00CBE9FD /* WeiboPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboPopViewController.h; sourceTree = "<group>"; };
 		F27D5F321C85293C00CBE9FD /* WeiboPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboPopViewController.m; sourceTree = "<group>"; };
 		F27D5F341C8529F100CBE9FD /* PTWeiboMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTWeiboMenuView.h; sourceTree = "<group>"; };
@@ -214,6 +222,10 @@
 		F2CD583C1CDB3F8D0004A0BB /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		F2D9E1481C87D3A000DD6409 /* UIView+PTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PTView.h"; sourceTree = "<group>"; };
 		F2D9E1491C87D3A000DD6409 /* UIView+PTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PTView.m"; sourceTree = "<group>"; };
+		F2E3F11F1D7FA38A0021F18D /* PTPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPlayerViewController.h; sourceTree = "<group>"; };
+		F2E3F1201D7FA38A0021F18D /* PTPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPlayerViewController.m; sourceTree = "<group>"; };
+		F2E3F1221D7FADF50021F18D /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		F2E3F1241D7FAFDC0021F18D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		F2EC4AE01C7D826200FD4ACE /* PTKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EC4AE41C7D826200FD4ACE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2EC4AE61C7D826200FD4ACE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -246,6 +258,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D03D1A1D7FB10000DAF199 /* VideoToolbox.framework in Frameworks */,
 				F2CD583D1CDB3F8D0004A0BB /* libbz2.tbd in Frameworks */,
 				F2CD583B1CDB3F770004A0BB /* libz.tbd in Frameworks */,
 				F2CD58391CDB3F1B0004A0BB /* libiconv.tbd in Frameworks */,
@@ -285,6 +298,8 @@
 		37A79CB2778E032EEA52B790 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F2E3F1241D7FAFDC0021F18D /* MediaPlayer.framework */,
+				F2E3F1221D7FADF50021F18D /* VideoToolbox.framework */,
 				F2CD583C1CDB3F8D0004A0BB /* libbz2.tbd */,
 				F2CD583A1CDB3F770004A0BB /* libz.tbd */,
 				F2CD58381CDB3F1B0004A0BB /* libiconv.tbd */,
@@ -357,6 +372,27 @@
 				F2F4093F1C8E63F10007D73D /* CoreTextData.m */,
 			);
 			path = CoreText;
+			sourceTree = "<group>";
+		};
+		F25455471D7E9DBC00A75FC7 /* 播放器 */ = {
+			isa = PBXGroup;
+			children = (
+				F254554B1D7EBE4600A75FC7 /* PTPlayer */,
+				F25455481D7E9E0800A75FC7 /* MovieTableViewController.h */,
+				F25455491D7E9E0800A75FC7 /* MovieTableViewController.m */,
+			);
+			path = "播放器";
+			sourceTree = "<group>";
+		};
+		F254554B1D7EBE4600A75FC7 /* PTPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F254554C1D7EC6AC00A75FC7 /* PTDecoder.h */,
+				F254554D1D7EC6AC00A75FC7 /* PTDecoder.m */,
+				F2E3F11F1D7FA38A0021F18D /* PTPlayerViewController.h */,
+				F2E3F1201D7FA38A0021F18D /* PTPlayerViewController.m */,
+			);
+			path = PTPlayer;
 			sourceTree = "<group>";
 		};
 		F27BE8041C9955A9008D6A40 /* PTLabel */ = {
@@ -608,6 +644,7 @@
 		F2EC4AE21C7D826200FD4ACE /* PTKit */ = {
 			isa = PBXGroup;
 			children = (
+				F25455471D7E9DBC00A75FC7 /* 播放器 */,
 				F252F8661C8D5AE500680CBA /* 绘图与文本 */,
 				F2C8DEDD1C8439C80050CD8F /* 工具类 */,
 				F244B85C1C7D859300421236 /* 动画与特效 */,
@@ -830,12 +867,15 @@
 				F2A6C0E71CAD01DB00A57E13 /* PTDisplayLayer.m in Sources */,
 				F2F409371C8E607C0007D73D /* PTDisplayView.m in Sources */,
 				F244B86B1C7D8E9200421236 /* UIViewController+PopAnimation.m in Sources */,
+				F254554E1D7EC6AC00A75FC7 /* PTDecoder.m in Sources */,
 				F2FAF6C01C9F93B900200FC1 /* NSAttributedString+PTNSAttributedString.m in Sources */,
 				F28469D81CA513BD00E64CFA /* PTTextParser.m in Sources */,
 				F2F4093A1C8E63BD0007D73D /* PTFrameParserConfig.m in Sources */,
+				F254554A1D7E9E0800A75FC7 /* MovieTableViewController.m in Sources */,
 				F2C8DEE01C843B3E0050CD8F /* NSTimer+PTTimer.m in Sources */,
 				F27D5F331C85293C00CBE9FD /* WeiboPopViewController.m in Sources */,
 				F252F86A1C8D5B0800680CBA /* CoreTextViewController.m in Sources */,
+				F2E3F1211D7FA38A0021F18D /* PTPlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -968,6 +1008,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"$(SRCROOT)/FFmpeg-iOS/include\"",
+				);
 				INFOPLIST_FILE = PTKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -987,6 +1034,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"$(SRCROOT)/FFmpeg-iOS/include\"",
+				);
 				INFOPLIST_FILE = PTKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
