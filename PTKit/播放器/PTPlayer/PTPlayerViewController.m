@@ -14,6 +14,14 @@
 
 @implementation PTPlayerViewController
 
+- (void)play {
+    
+}
+
+- (void)pause {
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

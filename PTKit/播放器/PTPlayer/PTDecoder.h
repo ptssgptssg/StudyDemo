@@ -7,6 +7,29 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
+
+typedef NS_ENUM(NSUInteger, PTMovieFrameType) {
+    PTMovieFrameTypeAudio,
+    PTMovieFrameTypeVideo,
+};
+
+@interface PTMovieFrame : NSObject
+@property (readonly, nonatomic) PTMovieFrameType type;
+@property (readonly, nonatomic) CGFloat position;
+@property (readonly, nonatomic) CGFloat duration;
+@end
+
+@interface PTVideoFrame : PTMovieFrame
+@property (readonly, nonatomic) NSUInteger width;
+@property (readonly, nonatomic) NSUInteger height;
+@end
+
+@interface PTVideoFrameYUV : PTVideoFrame
+@property (readonly, nonatomic, strong) NSData *bytesY;
+@property (readonly, nonatomic, strong) NSData *bytesU;
+@property (readonly, nonatomic, strong) NSData *bytesV;
+@end
 
 @interface PTDecoder : NSObject
 
