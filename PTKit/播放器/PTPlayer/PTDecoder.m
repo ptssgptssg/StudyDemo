@@ -33,10 +33,48 @@ static NSArray *collectStreams(AVFormatContext *formatCtx, enum AVMediaType code
     return [array copy];
 }
 
+static NSData *copyFrameData(UInt8 *src, int linesize, int width, int height) {
+    width = MIN(linesize, width);
+    NSMutableData *md = [NSMutableData dataWithLength:width * height];
+    Byte *dst = md.mutableBytes;
+    for (NSUInteger i = 0; i < height; i++) {
+        memcpy(dst, src, width);
+        dst += width;
+        src += linesize;
+    }
+    return md;
+}
+
+@interface PTMovieFrame()
+@property (readwrite, nonatomic) CGFloat position;
+@property (readwrite, nonatomic) CGFloat duration;
+@end
+
+@implementation PTMovieFrame
+@end
+
+@interface PTVideoFrame()
+@property (readwrite, nonatomic) NSUInteger width;
+@property (readwrite, nonatomic) NSUInteger height;
+@end
+
+@implementation PTVideoFrame
+@end
+
+@interface PTVideoFrameYUV()
+@property (readwrite, nonatomic, strong) NSData *bytesY;
+@property (readwrite, nonatomic, strong) NSData *bytesU;
+@property (readwrite, nonatomic, strong) NSData *bytesV;
+@end
+
+@implementation PTVideoFrameYUV
+@end
+
 @interface PTDecoder () {
     NSInteger videostream;
     NSArray *videostreams;
     AVFrame *videoFrame;
+    AVCodecContext *codecCtx;
 }
 @end
 
@@ -73,7 +111,7 @@ static NSArray *collectStreams(AVFormatContext *formatCtx, enum AVMediaType code
         NSUInteger iStream = number.integerValue;
         if ((formatCtx->streams[iStream]->disposition & AV_DISPOSITION_ATTACHED_PIC) == 0) {
             
-            AVCodecContext *codecCtx = formatCtx->streams[iStream]->codec;
+            codecCtx = formatCtx->streams[iStream]->codec;
             AVCodec *codec = avcodec_find_decoder(codecCtx->codec_id);
             
             if (!codec) {
@@ -90,6 +128,30 @@ static NSArray *collectStreams(AVFormatContext *formatCtx, enum AVMediaType code
             if (!videoFrame) {
                 avcodec_close(codecCtx);
                 return NO;
+            }
+        }
+    }
+    
+    AVPacket packet;
+    
+    NSMutableArray *result = [NSMutableArray array];
+    
+    while (av_read_frame(formatCtx, &packet) > 0) {
+        if (packet.stream_index == videostream) {
+            int gotframe = 0;
+            int ret = avcodec_decode_video2(codecCtx, videoFrame, &gotframe, &packet);
+            if (ret < 0) {
+                NSLog(@"decode video error");
+                break;
+            }
+            PTVideoFrame *frame;
+            PTVideoFrameYUV *yuvFrame = [[PTVideoFrameYUV alloc]init];
+            yuvFrame.bytesY = copyFrameData(videoFrame->data[0], videoFrame->linesize[0], codecCtx->width, codecCtx->height);
+            yuvFrame.bytesU = copyFrameData(videoFrame->data[1], videoFrame->linesize[1], codecCtx->width/2, codecCtx->height/2);
+            yuvFrame.bytesV = copyFrameData(videoFrame->data[2], videoFrame->linesize[2], codecCtx->width/2, codecCtx->height/2);
+            frame = yuvFrame;
+            if (frame) {
+                [result addObject:frame];
             }
         }
     }
