@@ -14,6 +14,17 @@ typedef NS_ENUM(NSUInteger, PTMovieFrameType) {
     PTMovieFrameTypeVideo,
 };
 
+typedef NS_ENUM(NSUInteger, PTMovieError) {
+    PTMovieErrorNone,
+    PTMovieErrorOpenFile,
+    PTMovieErrorStreamNotFound,
+    PTMovieErrorStreamInfoNotFound,
+    PTMovieErrorCodecNotFound,
+    PTMovieErrorOpenCodec,
+    PTMovieErrorAllocateFrame,
+    PTMovieErrorDecodeVideo,
+};
+
 @interface PTMovieFrame : NSObject
 @property (readonly, nonatomic) PTMovieFrameType type;
 @property (readonly, nonatomic) CGFloat position;
@@ -35,7 +46,8 @@ typedef NS_ENUM(NSUInteger, PTMovieFrameType) {
 
 @property (readonly, nonatomic) BOOL isNetwork;
 
-- (BOOL)openFile:(NSString *)path
-           error:(NSError **)perror;
+- (BOOL)openInput:(NSString *)path;
+
+- (NSArray *)decodeFrames;
 
 @end

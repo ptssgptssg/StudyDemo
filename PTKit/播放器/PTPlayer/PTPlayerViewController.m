@@ -7,6 +7,7 @@
 //
 
 #import "PTPlayerViewController.h"
+#import "PTDecoder.h"
 
 @interface PTPlayerViewController ()
 
@@ -25,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    PTDecoder *decoder = [[PTDecoder alloc]init];
 }
 
 - (void)didReceiveMemoryWarning {

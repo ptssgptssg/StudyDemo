@@ -7,6 +7,7 @@
 //
 
 #import "MovieTableViewController.h"
+#import "PTPlayerViewController.h"
 
 @interface MovieTableViewController ()
 

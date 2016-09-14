@@ -10,7 +10,7 @@
 
 @interface PTPlayerViewController : UIViewController
 
-- (void)paly;
+- (void)play;
 
 - (void)pause;
 
