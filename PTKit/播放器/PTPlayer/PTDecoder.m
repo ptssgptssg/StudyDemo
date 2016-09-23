@@ -108,6 +108,17 @@ static NSString *errorMsg(PTMovieError errorCode) {
 
 @implementation PTDecoder
 
+@dynamic frameWidth;
+@dynamic frameHeight;
+
+- (NSUInteger)frameWidth {
+    return codecCtx ? codecCtx->width : 0;
+}
+
+- (NSUInteger)frameHeight {
+    return codecCtx ? codecCtx->height : 0;
+}
+
 + (void)initialize {
     av_register_all();
 }
@@ -206,6 +217,10 @@ static NSString *errorMsg(PTMovieError errorCode) {
                 yuvFrame.bytesV = copyFrameData(videoFrame->data[2], videoFrame->linesize[2], codecCtx->width/2, codecCtx->height/2);
                 
                 frame = yuvFrame;
+                
+                frame.width = codecCtx->width;
+                frame.height = codecCtx->height;
+                
                 if (frame) {
                     [result addObject:frame];
                 }

@@ -12,6 +12,7 @@
 #import "AnimationTableViewController.h"
 #import "DrawTextTableViewController.h"
 #import "MovieTableViewController.h"
+#import "NetWorkTableViewController.h"
 
 //小分类
 #import "TaoBaoPopViewController.h"

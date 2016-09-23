@@ -44,6 +44,8 @@ typedef NS_ENUM(NSUInteger, PTMovieError) {
 
 @interface PTDecoder : NSObject
 
+@property (readonly, nonatomic) NSUInteger frameWidth;
+@property (readonly, nonatomic) NSUInteger frameHeight;
 @property (readonly, nonatomic) BOOL isNetwork;
 
 - (BOOL)openInput:(NSString *)path;

@@ -1,37 +1,22 @@
 //
-//  PTPlayerViewController.m
+//  ClientViewController.m
 //  PTKit
 //
-//  Created by 彭腾 on 16/9/7.
+//  Created by 彭腾 on 16/9/18.
 //  Copyright © 2016年 PT. All rights reserved.
 //
 
-#import "PTPlayerViewController.h"
-#import "PTDecoder.h"
+#import "ClientViewController.h"
 
-@interface PTPlayerViewController () {
-    dispatch_queue_t queue;
-}
+@interface ClientViewController ()
+
 @end
 
-@implementation PTPlayerViewController
-
-- (void)play {
-    
-}
-
-- (void)pause {
-    
-}
+@implementation ClientViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    PTDecoder *decoder = [[PTDecoder alloc]init];
-    queue = dispatch_queue_create("com.decoder.queue", DISPATCH_QUEUE_SERIAL);
-    dispatch_async(queue, ^{
-        
-    });
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

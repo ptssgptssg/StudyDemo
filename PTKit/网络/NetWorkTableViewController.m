@@ -1,43 +1,27 @@
 //
-//  MainTableViewController.m
+//  NetWorkTableViewController.m
 //  PTKit
 //
-//  Created by 彭腾 on 16/2/24.
+//  Created by 彭腾 on 16/9/18.
 //  Copyright © 2016年 PT. All rights reserved.
 //
 
-#import "MainTableViewController.h"
-#import "PTKit.h"
+#import "NetWorkTableViewController.h"
 
-@interface MainTableViewController ()
-
-@property (nonatomic, strong) NSMutableArray *titles;
-@property (nonatomic, strong) NSMutableArray *classNames;
+@interface NetWorkTableViewController ()
 
 @end
 
-@implementation MainTableViewController
+@implementation NetWorkTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _titles = [NSMutableArray array];
-    _classNames = [NSMutableArray array];
-    
-    [self addCell:@"动画与特效" class:@"AnimationTableViewController"];
-    [self addCell:@"绘图与文本" class:@"DrawTextTableViewController"];
-    [self addCell:@"播放器" class:@"MovieTableViewController"];
-    [self addCell:@"网络" class:@"NetWorkTableViewController"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)addCell:(NSString *)title class:(NSString *)className {
-    [self.titles addObject:title];
-    [self.classNames addObject:className];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,38 +32,24 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+#warning Incomplete implementation, return the number of sections
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _titles.count;
+#warning Incomplete implementation, return the number of rows
+    return 0;
 }
 
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    static NSString *identifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-    }
-    
-    cell.textLabel.text = _titles[indexPath.row];
+    // Configure the cell...
     
     return cell;
 }
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *className = _classNames[indexPath.row];
-    Class class = NSClassFromString(className);
-    if (class) {
-        UIViewController *vc = class.new;
-        vc.title = _titles[indexPath.row];
-        [self.navigationController pushViewController:vc animated:YES];
-    }
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-}
+*/
 
 /*
 // Override to support conditional editing of the table view.

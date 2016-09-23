@@ -23,6 +23,12 @@
 		F28469D51CA50FE400E64CFA /* PTTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F28469D41CA50FE400E64CFA /* PTTextLayout.m */; };
 		F28469D81CA513BD00E64CFA /* PTTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F28469D71CA513BD00E64CFA /* PTTextParser.m */; };
 		F2A6C0E71CAD01DB00A57E13 /* PTDisplayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A6C0E61CAD01DB00A57E13 /* PTDisplayLayer.m */; };
+		F2B299651D8E26540052C2F9 /* PTMovieGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B299641D8E26540052C2F9 /* PTMovieGLView.m */; };
+		F2B2996C1D8E6FAA0052C2F9 /* NetWorkTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B2996B1D8E6FAA0052C2F9 /* NetWorkTableViewController.m */; };
+		F2B299701D8E708B0052C2F9 /* ServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B2996E1D8E708B0052C2F9 /* ServerViewController.m */; };
+		F2B299711D8E708B0052C2F9 /* ServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B2996F1D8E708B0052C2F9 /* ServerViewController.xib */; };
+		F2B299751D8E70A20052C2F9 /* ClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B299731D8E70A20052C2F9 /* ClientViewController.m */; };
+		F2B299761D8E70A20052C2F9 /* ClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B299741D8E70A20052C2F9 /* ClientViewController.xib */; };
 		F2C8DEE01C843B3E0050CD8F /* NSTimer+PTTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C8DEDF1C843B3E0050CD8F /* NSTimer+PTTimer.m */; };
 		F2CD57B61CDB3C180004A0BB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CD57B51CDB3C180004A0BB /* CoreMedia.framework */; };
 		F2CD57B81CDB3C2B0004A0BB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CD57B71CDB3C2B0004A0BB /* AVFoundation.framework */; };
@@ -106,6 +112,16 @@
 		F28D3DE81C7FFFE900F4337F /* PTKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKit.h; sourceTree = "<group>"; };
 		F2A6C0E51CAD01DB00A57E13 /* PTDisplayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDisplayLayer.h; sourceTree = "<group>"; };
 		F2A6C0E61CAD01DB00A57E13 /* PTDisplayLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDisplayLayer.m; sourceTree = "<group>"; };
+		F2B299631D8E26540052C2F9 /* PTMovieGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTMovieGLView.h; sourceTree = "<group>"; };
+		F2B299641D8E26540052C2F9 /* PTMovieGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTMovieGLView.m; sourceTree = "<group>"; };
+		F2B2996A1D8E6FAA0052C2F9 /* NetWorkTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkTableViewController.h; sourceTree = "<group>"; };
+		F2B2996B1D8E6FAA0052C2F9 /* NetWorkTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkTableViewController.m; sourceTree = "<group>"; };
+		F2B2996D1D8E708B0052C2F9 /* ServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerViewController.h; sourceTree = "<group>"; };
+		F2B2996E1D8E708B0052C2F9 /* ServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerViewController.m; sourceTree = "<group>"; };
+		F2B2996F1D8E708B0052C2F9 /* ServerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerViewController.xib; sourceTree = "<group>"; };
+		F2B299721D8E70A20052C2F9 /* ClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientViewController.h; sourceTree = "<group>"; };
+		F2B299731D8E70A20052C2F9 /* ClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientViewController.m; sourceTree = "<group>"; };
+		F2B299741D8E70A20052C2F9 /* ClientViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientViewController.xib; sourceTree = "<group>"; };
 		F2C8DEDE1C843B3E0050CD8F /* NSTimer+PTTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+PTTimer.h"; sourceTree = "<group>"; };
 		F2C8DEDF1C843B3E0050CD8F /* NSTimer+PTTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+PTTimer.m"; sourceTree = "<group>"; };
 		F2CD57B51CDB3C180004A0BB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -389,6 +405,8 @@
 			children = (
 				F254554C1D7EC6AC00A75FC7 /* PTDecoder.h */,
 				F254554D1D7EC6AC00A75FC7 /* PTDecoder.m */,
+				F2B299631D8E26540052C2F9 /* PTMovieGLView.h */,
+				F2B299641D8E26540052C2F9 /* PTMovieGLView.m */,
 				F2E3F11F1D7FA38A0021F18D /* PTPlayerViewController.h */,
 				F2E3F1201D7FA38A0021F18D /* PTPlayerViewController.m */,
 			);
@@ -410,6 +428,29 @@
 				F2EFACA91CC8755600609DB9 /* PTTextLine.m */,
 			);
 			path = PTLabel;
+			sourceTree = "<group>";
+		};
+		F2B299681D8E6F7F0052C2F9 /* 网络 */ = {
+			isa = PBXGroup;
+			children = (
+				F2B299691D8E6F7F0052C2F9 /* socket */,
+				F2B2996A1D8E6FAA0052C2F9 /* NetWorkTableViewController.h */,
+				F2B2996B1D8E6FAA0052C2F9 /* NetWorkTableViewController.m */,
+			);
+			path = "网络";
+			sourceTree = "<group>";
+		};
+		F2B299691D8E6F7F0052C2F9 /* socket */ = {
+			isa = PBXGroup;
+			children = (
+				F2B2996D1D8E708B0052C2F9 /* ServerViewController.h */,
+				F2B2996E1D8E708B0052C2F9 /* ServerViewController.m */,
+				F2B2996F1D8E708B0052C2F9 /* ServerViewController.xib */,
+				F2B299721D8E70A20052C2F9 /* ClientViewController.h */,
+				F2B299731D8E70A20052C2F9 /* ClientViewController.m */,
+				F2B299741D8E70A20052C2F9 /* ClientViewController.xib */,
+			);
+			path = socket;
 			sourceTree = "<group>";
 		};
 		F2C8DEDD1C8439C80050CD8F /* 工具类 */ = {
@@ -644,6 +685,7 @@
 		F2EC4AE21C7D826200FD4ACE /* PTKit */ = {
 			isa = PBXGroup;
 			children = (
+				F2B299681D8E6F7F0052C2F9 /* 网络 */,
 				F25455471D7E9DBC00A75FC7 /* 播放器 */,
 				F252F8661C8D5AE500680CBA /* 绘图与文本 */,
 				F2C8DEDD1C8439C80050CD8F /* 工具类 */,
@@ -792,8 +834,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B299711D8E708B0052C2F9 /* ServerViewController.xib in Resources */,
 				F2EC4AEA1C7D826200FD4ACE /* Assets.xcassets in Resources */,
 				F2EC4AED1C7D826200FD4ACE /* LaunchScreen.storyboard in Resources */,
+				F2B299761D8E70A20052C2F9 /* ClientViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -859,10 +903,12 @@
 				F2EC4AE81C7D826200FD4ACE /* AppDelegate.m in Sources */,
 				F2EC4AE51C7D826200FD4ACE /* main.m in Sources */,
 				F27D5F361C8529F100CBE9FD /* PTWeiboMenuView.m in Sources */,
+				F2B2996C1D8E6FAA0052C2F9 /* NetWorkTableViewController.m in Sources */,
 				F2F4093D1C8E63CF0007D73D /* PTFrameParser.m in Sources */,
 				F244B85F1C7D85BC00421236 /* MainTableViewController.m in Sources */,
 				F28469D51CA50FE400E64CFA /* PTTextLayout.m in Sources */,
 				F244B8681C7D8DD800421236 /* TaoBaoPopViewController.m in Sources */,
+				F2B299651D8E26540052C2F9 /* PTMovieGLView.m in Sources */,
 				F23FB2291CA44AB300A2D401 /* PTLabel.m in Sources */,
 				F2A6C0E71CAD01DB00A57E13 /* PTDisplayLayer.m in Sources */,
 				F2F409371C8E607C0007D73D /* PTDisplayView.m in Sources */,
@@ -870,12 +916,14 @@
 				F254554E1D7EC6AC00A75FC7 /* PTDecoder.m in Sources */,
 				F2FAF6C01C9F93B900200FC1 /* NSAttributedString+PTNSAttributedString.m in Sources */,
 				F28469D81CA513BD00E64CFA /* PTTextParser.m in Sources */,
+				F2B299751D8E70A20052C2F9 /* ClientViewController.m in Sources */,
 				F2F4093A1C8E63BD0007D73D /* PTFrameParserConfig.m in Sources */,
 				F254554A1D7E9E0800A75FC7 /* MovieTableViewController.m in Sources */,
 				F2C8DEE01C843B3E0050CD8F /* NSTimer+PTTimer.m in Sources */,
 				F27D5F331C85293C00CBE9FD /* WeiboPopViewController.m in Sources */,
 				F252F86A1C8D5B0800680CBA /* CoreTextViewController.m in Sources */,
 				F2E3F1211D7FA38A0021F18D /* PTPlayerViewController.m in Sources */,
+				F2B299701D8E708B0052C2F9 /* ServerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
