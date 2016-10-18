@@ -10,6 +10,8 @@
 
 @interface PTPlayerViewController : UIViewController
 
++ (id)movieViewControllerWithContentPath:(NSString *)path;
+
 - (void)play;
 
 - (void)pause;

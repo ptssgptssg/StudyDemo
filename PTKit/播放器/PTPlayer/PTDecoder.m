@@ -80,6 +80,9 @@ static NSString *errorMsg(PTMovieError errorCode) {
 @end
 
 @implementation PTVideoFrame
+- (PTMovieFrameType)type {
+    return PTMovieFrameTypeVideo;
+}
 @end
 
 @interface PTVideoFrameYUV()
@@ -123,6 +126,11 @@ static NSString *errorMsg(PTMovieError errorCode) {
     av_register_all();
 }
 
+- (BOOL)openFile:(NSString *)path {
+    
+    return YES;
+}
+
 - (BOOL)openInput:(NSString *)path {
     _isNetwork = isNetworkPath(path);
     
@@ -155,6 +163,7 @@ static NSString *errorMsg(PTMovieError errorCode) {
         
         if ((formatCtx->streams[iStream]->disposition & AV_DISPOSITION_ATTACHED_PIC) == 0) {
             
+            videostream = iStream;
             codecCtx = formatCtx->streams[iStream]->codec;
             codec = avcodec_find_decoder(codecCtx->codec_id);
             
@@ -182,13 +191,13 @@ static NSString *errorMsg(PTMovieError errorCode) {
         return nil;
     }
     //AVPacket是存储压缩编码数据相关信息的结构体
-    AVPacket *packet;
+    AVPacket packet;
     
     NSMutableArray *result = [NSMutableArray array];
 
-    while (av_read_frame(formatCtx, packet) > 0) {
+    while (av_read_frame(formatCtx, &packet) > 0) {
         
-        if (packet->stream_index == videostream) {
+        if (packet.stream_index == videostream) {
             
             int gotframe = 0;
             /**
@@ -201,7 +210,7 @@ static NSString *errorMsg(PTMovieError errorCode) {
              *
              *  @return 小于0解码失败
              */
-            int ret = avcodec_decode_video2(codecCtx, videoFrame, &gotframe, packet);
+            int ret = avcodec_decode_video2(codecCtx, videoFrame, &gotframe, &packet);
             
             if (ret < 0) {
                 errorMsg(PTMovieErrorDecodeVideo);

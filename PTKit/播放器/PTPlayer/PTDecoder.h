@@ -50,6 +50,8 @@ typedef NS_ENUM(NSUInteger, PTMovieError) {
 
 - (BOOL)openInput:(NSString *)path;
 
+- (BOOL)openFile:(NSString *)path;
+
 - (NSArray *)decodeFrames;
 
 @end

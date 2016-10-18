@@ -60,6 +60,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSString *path = _movieArray[indexPath.row];
+    PTPlayerViewController *vc = [PTPlayerViewController movieViewControllerWithContentPath:path];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 /*
